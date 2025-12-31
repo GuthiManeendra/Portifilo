@@ -1,0 +1,89 @@
+.skills-section {
+  background-color: #ffffff;
+}
+
+/* Title */
+.skills-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card */
+.skills-card {
+  background: #f9fafb;
+  padding: 28px;
+  border-radius: 14px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift */
+.skills-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.skills-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.skills-desc {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* Skills list */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Badge */
+.skill-badge {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #e5e7eb;
+  color: #111827;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+/* Badge hover */
+.skill-badge:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* ================= ANIMATIONS ================= */
+.animate-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delays */
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.6s; }
